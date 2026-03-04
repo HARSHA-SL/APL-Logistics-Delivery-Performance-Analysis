@@ -22,7 +22,7 @@ st.title("APL Logistics – Delivery Performance Dashboard")
 @st.cache_data
 def load_data():
     # Encoding adjusted due to earlier Unicode error
-   df = pd.read_csv("APL_Logistics.zip", compression="zip", encoding="latin1")
+    df = pd.read_csv("APL_Logistics.zip", compression="zip", encoding="latin1")
     return df
 
 df = load_data()
@@ -191,3 +191,4 @@ st.markdown("""
 - Financial impact per order is moderate but accumulates at scale.
 
 """)
+
